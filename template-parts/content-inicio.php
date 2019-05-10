@@ -128,10 +128,10 @@
 	<div class="container">
 		<h2 class="section-title font-weight-bold text-center mb-5 pb-2"><?php _e( 'Nuestra Empresa', 'fumysam' ); ?></h2>
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-12 col-lg-8">
 				<?php the_field('contenido_de_nuestra_empresa'); ?>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-12 col-lg-4">
 				<?php $image = get_field('imagen_de_nuestra_empresa'); ?>
 				<img src="<?php echo $image['sizes']['cuadrado']; ?>" class="img-fluid rounded-circle" alt="Lorem ipsum dolor sit">
 			</div>
@@ -143,7 +143,7 @@
 	<div class="container">
 		<div class="row">
 			<?php if(have_rows('destrezas')) : while(have_rows('destrezas')) : the_row(); ?>
-				<div class="col-md-3">
+				<div class="col-md-6 col-lg-3">
 					<div class="destreza text-center mb-3">
 						<?php $image = get_sub_field('icono_de_la_destreza'); ?>
 						<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php the_sub_field('titulo_de_la_destreza'); ?>" class="mb-3">
@@ -164,7 +164,7 @@
 					<?php the_field('texto_de_la_seccion_calidad'); ?>
 				</div>
 			</div>
-			<div class="col-md-12 col-lg-8">
+			<div class="col-md-12 col-lg-8 d-none d-lg-block">
 				<div class="galeria text-center">
 					<?php $images = get_field('galeria_de_la_seccion_calidad'); ?>
 					<?php foreach ($images as $image) : ?>
