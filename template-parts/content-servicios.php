@@ -121,13 +121,13 @@
 	<section id="contactenos" class="font-raleway pt-5 pb-5 text-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-12 col-lg-6">
 					<h4 class="section-title text-center font-weight-bold mb-3"><?php _e( 'Contáctenos', 'fumysam' ); ?></h4>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-12 col-lg-6">
 					<h5 class="font-weight-bold text-center">
-						<span class="mr-2 mb-5"><i class="fa fa-envelope background-orange text-white p-2 rounded-circle mr-1"></i><?php the_field('correo_electronico', 'option'); ?></span>
-						<span><i class="fa fa-phone background-orange text-white p-2 rounded-circle mr-1"></i><?php the_field('telefono', 'option'); ?></span>
+						<span class="mr-2 mb-5"><i class="fa fa-envelope bg-orange text-white p-2 rounded-circle mr-1"></i><?php the_field('correo_electronico', 'option'); ?></span>
+						<span><i class="fa fa-phone bg-orange text-white p-2 rounded-circle mr-1"></i><?php the_field('telefono', 'option'); ?></span>
 					</h5>
 				</div>
 			</div>
