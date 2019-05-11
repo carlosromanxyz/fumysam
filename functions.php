@@ -179,6 +179,11 @@ require get_template_directory() . '/inc/custom-post-type.php';
 require get_template_directory() . '/inc/custom-taxonomy.php';
 
 /**
+ * Custom ACF Options file
+ */
+require get_template_directory() . '/inc/custom-acf-options.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
